@@ -29,13 +29,13 @@
                 <el-menu-item index="/articleList">列表1</el-menu-item>
             </el-submenu> -->
             <el-submenu index="3">
-                <template slot="title"><i class="el-icon-check"></i>日志中心</template>
-                <el-menu-item index="/infoManage">列表</el-menu-item>
-                <el-menu-item index="/infoManage">发布</el-menu-item>
+                <template slot="title"><i class="el-icon-check"></i>文章中心</template>
+                <el-menu-item index="/articleList">列表</el-menu-item>
+                <el-menu-item index="/releaseArticle">发布</el-menu-item>
             </el-submenu>
             <el-submenu index="4">
                 <template slot="title"><i class="el-icon-edit"></i>分类管理</template>
-                <el-menu-item index="/fillInRecord">标签</el-menu-item>
+                <el-menu-item index="/labelList">标签</el-menu-item>
             </el-submenu>
         </template>
     </el-menu>
@@ -73,20 +73,18 @@ export default {
 </script>
 
 <style>
-.el-menu {
-  height: 100%;
-}
 html,body,div,.el-main{
     margin: 0;
     padding: 0;
-    height: 100%;
 }
 .el-container {
   padding: 0;
   width: 100%;
   height: 100%;
   margin: 0;
-
+}
+.el-menu {
+  height: 100%;
 }
 .el-header {
   background-color: #409eff;
@@ -96,5 +94,6 @@ html,body,div,.el-main{
 }
 .el-main {
   background-color: rgb(255, 255, 255);
+  height: 100%;
 }
 </style>

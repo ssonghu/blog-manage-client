@@ -1,15 +1,17 @@
 <template>
-  <div>
+  <div class="login">
     <el-row>
-      <el-col :span="6">username</el-col>
-      <el-col :span="6"><el-input></el-input></el-col>
-    </el-row>
-    <el-row>
-      <el-col :span="6">password</el-col>
-      <el-col :span="6"><el-input type="password"></el-input></el-col>
-    </el-row>
-    <el-row>
-      <el-col :span="12"><el-button @click="login">Login</el-button></el-col>
+      <el-row justify="center" type="flex">
+        <el-col :span="3"><span>username</span></el-col>
+        <el-col :span="6"><el-input type="text" size="medium"></el-input></el-col>
+      </el-row>
+      <el-row justify="center" type="flex">
+        <el-col :span="3">password</el-col>
+        <el-col :span="6"><el-input type="password" size="medium"></el-input></el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="3" :offset="11"><el-button @click="login">Login</el-button></el-col>
+      </el-row>
     </el-row>
   </div>
 </template>
@@ -35,6 +37,9 @@ html,body {
   padding: 0;
   height: 100%;
   width: 100%
+}
+.login{
+  margin-top: 25%;
 }
 
 </style>
