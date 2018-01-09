@@ -1,6 +1,7 @@
 # blog-manage-client
 
 Vue+ElementUI
+b/s
 
 ## Build Setup
 
